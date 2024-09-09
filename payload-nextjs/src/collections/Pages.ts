@@ -1,4 +1,6 @@
-export const Pages = {
+import { CollectionConfig } from 'payload/types'
+
+export const Pages: CollectionConfig = {
     slug: 'pages', // compulsory
     labels: {
         singular: "Page",
