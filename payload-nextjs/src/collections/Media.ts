@@ -1,7 +1,8 @@
-export const Media = {
+import { CollectionConfig } from 'payload/types'
+export const Media: CollectionConfig = {
     slug: 'media', // compulsory
     labels: {
-        singlar: "Media",
+        singular: "Media",
         plural: "Media"
     },
     upload: true, // Uploading of images/assets in general

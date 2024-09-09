@@ -1,7 +1,7 @@
 export const Pages = {
     slug: 'pages', // compulsory
     labels: {
-        singlar: "Page",
+        singular: "Page",
         plural: "Pages"
     },
     fields: [
