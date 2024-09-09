@@ -9,7 +9,7 @@ export const Pages: CollectionConfig = {
         plural: "Pages"
     },
     access: {
-        read: () => true // Let the Media collection be public
+        read: () => true // Let the Pages collection be public
     },
     fields: [
         {

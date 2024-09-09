@@ -1,6 +1,7 @@
 // Dynamic route in NextJS
 import axios from "axios";
 import React from "react";
+import RenderBlocks from "../utils/RenderBlocks";
 
 export default function Page({page}) {
 
@@ -23,10 +24,10 @@ export const getStaticPaths = async () => {
             return {
                 params: { 
                     slug: slug !== "index" ? slug.split("/") : false 
-                },
-                fallback: false
+                }
             }
-        })
+        }),
+        fallback: false
     }
 
     return res;
