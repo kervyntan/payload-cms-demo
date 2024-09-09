@@ -8,6 +8,9 @@ export const Pages: CollectionConfig = {
         singular: "Page",
         plural: "Pages"
     },
+    access: {
+        read: () => true // Let the Media collection be public
+    },
     fields: [
         {
             name: "name",
