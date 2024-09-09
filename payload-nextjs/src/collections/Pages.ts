@@ -1,3 +1,5 @@
+import { Hero } from '../blocks/Hero'
+import { TwoColumn } from '../blocks/TwoColumn'
 import { CollectionConfig } from 'payload/types'
 
 export const Pages: CollectionConfig = {
@@ -23,7 +25,7 @@ export const Pages: CollectionConfig = {
             name: "layout",
             label: "Layout",
             type: "blocks", // Blocks are like Hero, Text etc. blocks
-            blocks: [] // an array of blocks
+            blocks: [Hero, TwoColumn] // an array of blocks
         }
     ]
 
