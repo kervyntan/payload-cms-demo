@@ -1,6 +1,8 @@
+import { Heading } from '../blocks/Heading'
 import { Hero } from '../blocks/Hero'
 import { TwoColumn } from '../blocks/TwoColumn'
 import { CollectionConfig } from 'payload/types'
+import { TextBox } from '../blocks/TextBox'
 
 export const Pages: CollectionConfig = {
     slug: 'pages', // compulsory
@@ -28,7 +30,7 @@ export const Pages: CollectionConfig = {
             name: "layout",
             label: "Layout",
             type: "blocks", // Blocks are like Hero, Text etc. blocks
-            blocks: [Hero, TwoColumn] // an array of blocks
+            blocks: [Hero, TwoColumn, Heading, TextBox] // an array of blocks
         }
     ]
 
